@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Typing game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="contenedor">
+        <div class="todo">
+            <h1>    Typing game!</h1>
+            <p>Practique sus habilidades de tipeo con este texto de ejemplo de Sherlock Holmes. Haga Click en INICIAR para empezar!</p>
+            <p id="quote"></p> <!-- En este bloque mostramos el texto de ejemplo -->
+            <p id="message"></p> <!-- En este bloque mostramos los mensajes del juego -->
+        </div>
+        <div class="todo">
+            <input type="text" aria-label="palabra actual" id="texto-tipeado" />  <br><br><br><!-- el componente textbox para ingresar el texto -->
+            <button type="button" id="inicio" onclick="mostrar_input()">INICIAR</button> <!-- Botón para iniciar el juego -->
+            <script src="script.js"></script>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+body {
+    background-color:#F2B880;
+    font-family: 'montserrat', sans-serif;
+    text-align: right;
+    float: right;
+}
+#contenedor{
+    width: 1000px;
+    height: 500px;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+}
+.highlight {
+    background-color:greenyellow;
+ }
+ .error {
+    background-color: lightcoral;
+    border-color: red;  
+ }
+@keyframes mover{
+    0%{ 
+        transform: translateY(15px); /*cuando la animacion va por el 0% la imagen se va a mover 15px en el eje Y*/
+    }
+    50%{
+        transform: translateY(0px);/*cuando la animacion va por el 0% la imagen se va a mover 0px en el eje Y*/
+    }
+    100%{
+        transform: translateY(15px);/*cuando la animacion va por el 100% la imagen se va a volver a mover 15px en el eje Y*/
+    }
+} 
+#inicio{
+    animation-name: mover;
+    animation: mover 2s linear infinite;
+}
+#inicio {
+    padding: 12px 30px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'montserrat', sans-serif;
+    background-color: #C98686;
+    border: none;
+    border-radius: 20px;
+    color:#f3f1f6;
+    letter-spacing: 1px;
+    transition: transform 20ms ease-in;
+}
+#inicio:hover{
+    box-shadow: 0 4px 18px rgba(0,0,0,0.25), 
+    0 5px 5px rgba(0,0,0,0.22);
+}
+#inicio:active {
+	transform: scale(0.95);
+}   
+input{
+    height: 40px;
+    width: 500px;
+    border: none;
+    border-radius: 50px;
+    font-family: 'montserrat', sans-serif;
+    text-align: center;
+    display: none;
+    float: right;
+
+}
+#message{
+    font-weight: bold;
+}
+
